@@ -1,41 +1,52 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
+import './index.css'
+import { Button } from 'antd';
+import kingImg from '../../../public/img/king.png'
 const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('user');
+
   const navigate = useNavigate();
 
-  const handleLogin = () => {
+  const handleLogin = (role) => {
     // 这里可以添加实际的登录逻辑，比如发送请求到后端进行验证
-    if (role === 'admin') {
-      navigate('/admin-dashboard');
-    } else {
-      navigate('/user-dashboard');
+    switch (role) {
+      case 'admin':
+        navigate('/admin-dashboard');
+        break;
+      case 'user':
+        navigate('/user-dashboard');
+        break;
+      case 'Rider':
+        navigate('/rider-dashboard');
+        break;
+      case 'Restaurant':
+        navigate('/restaurant-dashboard');
+        break;
+      default:
+        break;
     }
   };
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <select value={role} onChange={(e) => setRole(e.target.value)}>
-        <option value="user">User</option>
-        <option value="admin">Admin</option>
-      </select>
-      <button onClick={handleLogin}>Login</button>
-      <Link to="/">Back to Home</Link>
+      <div  className='all_box'>
+        <div className='log_blackgrourd'>
+          <div className='log_in'>
+          <div className='log_in_title'>
+          <img src={kingImg} alt="king" className='king_img' />
+          <div className='log_title'>王氏外卖</div>
+          </div>
+          <div onClick={handleLogin('admin')} className='log_in_title'>管理员</div>
+          <div onClick={handleLogin('user')} className='log_in_title'>用户</div>
+          <div onClick={handleLogin('Rider')} className='log_in_title'>骑手</div>
+          <div onClick={handleLogin('Restaurant')} className='log_in_title'>商家</div>     
+          </div>   
+        </div>
+
+      </div>
+      
     </div>
   );
 };
