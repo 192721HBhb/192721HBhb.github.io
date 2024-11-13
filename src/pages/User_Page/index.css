@@ -10,7 +10,7 @@
     height: 100%;
     width: 25%;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: #fa9966;
 }
 .router_items{
     margin-top: 20px;
@@ -24,12 +24,15 @@
 }
 .content_title{
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    height: 30%;
+    align-content: center;
+    height: 5%;
     width: 100%;
-    border: 1px solid #b5c3d2;
-    border-right-color: #47acc5;
+    font-size: 30px;
+   background-color: #fcd89e;
+   color: #ddb387;
 }
 .content_body{
     display: flex;

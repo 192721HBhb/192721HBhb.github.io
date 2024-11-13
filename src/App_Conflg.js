@@ -2,8 +2,11 @@ import UserDashboard from './pages/User_Page/index';
 import AdminDashboard from './pages/Master_Page/index';
 import Restrurant from './pages/Restaurant_Page/index';
 import LoginPage from './pages/logIn/index';
- import Test1 from './pages/User_Page/User_Message/index'
- import Test2 from './pages/User_Page/User_Order/index';
+ import UserMessage from './pages/User_Page/User_Message/index'
+ import UserOrder from './pages/User_Page/User_Order/index';
+ import UserFirst from './pages/User_Page/User_firtstPage/index'
+ import UserTakeOutOrdering from './pages/User_Page/User_Food/index'
+
 export const route = [
 	{
 		path: '/admin-dashboard',
@@ -15,12 +18,20 @@ export const route = [
 		element: <UserDashboard />,
         children: [
 			{
-				path: 'test1',
-				element: <Test1  />,
+				path: 'user_first',
+				element: <UserFirst  />,
 			},
 			{
-				path: 'test2',
-				element: <Test2 />,
+				path: 'user_message',
+				element: <UserMessage />,
+			},
+			{
+				path: 'user_takeoutOrdering',
+				element: <UserTakeOutOrdering />,
+			},
+			{
+				path: 'user_orderManagement',
+				element: <UserOrder />,
 			},
 		],
     },

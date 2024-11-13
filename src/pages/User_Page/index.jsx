@@ -1,30 +1,42 @@
 import React from 'react';
 import './index.css'
-import { Button } from 'antd';
-import {  Routes, Route,useNavigate,Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import ButtonRouterList from '../../component/SelectRouterButton/index';
+import AvatarPeople from "../../component/AvatarPeople/index"
+import TestImg from '../../public/img/TestAvatar.jpg'
+const testData = [
+  {
+    name: '首页',
+    router: 'user_first'
+  },
+  {
+    name: '个人中心',
+    router: 'user_message'
+  },
+  {
+    name: '外卖订餐',
+    router: 'user_takeoutOrdering'
+  },
+  {
+    name: '订单管理',
+    router: 'user_orderManagement'
+  },
+
+]
+const testAvatar={
+  name:"7777",
+  img:TestImg,
+}
 const UserDashboard = () => {
-  const handleLogin = (role) => {
-    console.log(role)
-    // 这里可以添加实际的登录逻辑，比如发送请求到后端进行验证
-    switch (role) {
-      case 'test1':
-        navigate('/user-dashboard/test1');
-        break;
-      case 'test2':
-        navigate('/user-dashboard/test2');
-        break;
-    }
-  };
-  const navigate = useNavigate();
   return (
     <div className="all_box">
       <div className='router'>
-        <Button  className='router_items' onClick={() => handleLogin('test1')}>test1</Button>
-        <Button  className='router_items' onClick={() => handleLogin('test2')}>test2</Button>
+         <AvatarPeople {...testAvatar} />
+        <ButtonRouterList Data={testData} />
       </div>
       <div className='content'>
         <div className='content_title'>
-          <h1>今日推荐</h1>
+          <div>王氏外卖用户端</div>
         </div>
         <div className='content_body'>
             <Outlet/>
