@@ -1,14 +1,14 @@
 import React from 'react';
 import {useRoutes, BrowserRouter } from 'react-router-dom';
 import '../node_modules/antd/dist/reset.css'
-import {route} from './App_Conflg';
+import {routes} from './config/routes';
 import './App.css'
 
 const App = () => {
 
   return (
    <div className='App'>
-      {useRoutes(route)}
+      {useRoutes(routes)}
 
 
   </div>

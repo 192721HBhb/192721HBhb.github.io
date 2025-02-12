@@ -1,0 +1,25 @@
+.particles-header {
+    position: relative;
+    /* width: 100%; */
+    height: 200px;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  }
+  
+  .particles-header canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  /* 适配移动端 */
+  @media (max-width: 768px) {
+    .particles-header {
+      height: 150px;
+    }
+    
+    .particles-header canvas {
+      height: 150px !important;
+    }
+  }

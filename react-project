@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name 8.210.238.60; # 没有域名填写服务器IP
+
+    root /root/blog_hb/build;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}

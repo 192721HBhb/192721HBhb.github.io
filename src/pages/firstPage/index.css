@@ -1,0 +1,52 @@
+/* App.css */
+:root {
+    --neon-blue: #0ff;
+    --neon-purple: #f0f;
+    --dark-bg: #2492c5;
+    --glow: 0 0 15px;
+  }
+  
+  /* 基础样式 */
+  body {
+    background: var(--dark-bg);
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+  } 
+   
+  /* 响应式容器 */
+  .app-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* 导航栏样式 */
+  .cyber-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(0, 17, 25, 0.95);
+    border: 1px solid var(--neon-blue);
+    box-shadow: var(--glow) var(--neon-blue);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  }
+  
+  .nav-link {
+    color: var(--neon-blue);
+    text-decoration: none;
+    padding: 0.8rem;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    border-color: var(--neon-purple);
+    text-shadow: var(--glow) var(--neon-purple);
+  }
+  
+  /* 响应式设计 */
+  

@@ -1,0 +1,45 @@
+.starfield-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #0a0a2a,
+    #1a1a1a,
+    #4a4a4a,
+    #a700ff,
+    #4a4a4a,
+    #1a1a1a,
+    #0a0a2a
+  );
+  overflow: hidden;
+}
+
+.starfield-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #0a0a2a,
+    #1a1a1a,
+    #4a4a4a,
+    #a700ff,
+    #4a4a4a,
+    #1a1a1a,
+    #0a0a2a
+  );
+  background-blend-mode: overlay;
+  z-index: 2;
+}
+
+.star-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
