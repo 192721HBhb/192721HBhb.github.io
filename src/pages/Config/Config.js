@@ -1,11 +1,15 @@
 // src/pages/Home.js
 import React from 'react';
-
+import AboutMe from '../../component/aboutMe/index'
 const Home = () => {
  
 
   return (
-    <div>hb</div>
+    <div>
+      <div>
+      <AboutMe/>
+      </div>
+    </div>
   );
 };
 

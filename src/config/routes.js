@@ -25,7 +25,7 @@ export const route = [
   },
   {
     path: "config",
-    name: "⚙️",
+    name: "实验",
     element: <Config />,
     nav: true,
     mobileHidden: true

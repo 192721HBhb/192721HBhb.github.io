@@ -1,7 +1,7 @@
 {
   "name": "takeaway_app",
   "version": "0.1.0",
-  "homepage": "https://192721hbhb.github.io/192721hbhb.github.io",
+  "homepage": "https://192721hbhb.github.io",
   "private": true,
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",

@@ -1,0 +1,11 @@
+.home_allBox{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../../../public//生成网站背景图.png') ;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+.timeShow{
+    margin-top: 10%;
+}
+

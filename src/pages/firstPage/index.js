@@ -18,7 +18,7 @@ const App = () => {
           ))}
         </nav>
 
-        {/* 移除了 Suspense，直接渲染 Route */}
+       
        <div>
        <Outlet />
        </div>

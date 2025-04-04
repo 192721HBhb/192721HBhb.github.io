@@ -1,0 +1,61 @@
+.about_allBox{
+    width: 100%;
+    height: 800px;
+    background-image:linear-gradient(135deg,#FFD26F 15%,#3677FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+
+}
+.about_message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 50%;
+    height: 600px;
+}
+.message_size{
+    font-size: 30px;
+  transition: 1s;
+  color: #FFF;
+
+  &:hover {
+    color: transparent;
+    text-shadow: 0 0 .1em #4e81bb, 0 0 .3em red;
+  }
+
+}
+.MYlX{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center
+}
+.circular-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.circular-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circular-avatar:hover {
+    transform: scale(1.05);
+}
+
+
+
