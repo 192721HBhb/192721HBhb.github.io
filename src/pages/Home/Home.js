@@ -4,7 +4,7 @@ import './Home.css';
 
 
 const Home = () => {
- console.log(bootstrap);
+ 
 
   return (
     <div>
