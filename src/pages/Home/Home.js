@@ -1,13 +1,14 @@
 // src/pages/Home.js
 import React from 'react';
 import './Home.css';
-import BlackHoleParticles from '../../component/BlackHole/hole';
+
+//import BlackHoleParticles from '../../component/BlackHole/hole';
 const Home = () => {
- 
+ console.log(bootstrap);
 
   return (
     <div>
-    <BlackHoleParticles />
+    9999
   </div>
   );
 };
