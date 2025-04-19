@@ -6,7 +6,7 @@ import FirstPage from '../pages/firstPage/index'
 
 export const route = [
   {
-    path: 'home',
+    path: '',
     element: <Home />,
     name: "Home",
     nav: true
